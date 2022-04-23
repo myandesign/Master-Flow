@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
   }
   body::-webkit-scrollbar-thumb {
     background-color: var(--primary);    /* цвет плашки */
-    border-radius: 0px;       /* закругления плашки */
+    border-radius: 4px;       /* закругления плашки */
     border: 3px solid var(--primary);  /* padding вокруг плашки */
   }
 
@@ -64,6 +64,7 @@ body::-webkit-scrollbar {
 
 .button-primary-active:hover {
     background: none;
+    color: var(--primary);
     border: 2px solid var(--primary);
 }
 
@@ -258,4 +259,49 @@ header iframe {
 
 .magic-trick .subtitle{
     margin-bottom: 32px;
+}
+
+/* Footer */
+
+.footer{
+    padding: 70px 0;
+    background: #0A083B;
+}
+
+.footer-logo img{
+    margin-bottom: 32px;
+}
+
+.tel-number{
+    display: block;
+    color: #fff !important;
+    font-weight: var(--font-weight-semi);
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.mailtoo{
+    font-size: 16px;
+    color: #fff !important;
+}
+
+.footer-menu{
+    color: #fff !important;
+}
+
+.footer-title{
+    font-size: 18px;
+    font-weight: var(--font-weight-semi);
+    margin-bottom: 32px;
+}
+
+.footer-link{
+    color: #D1D0DB;
+    display: block;
+    margin-bottom: 16px;
+    transition: .2s;
+}
+
+.footer-link:hover{
+    color: #fff;
 }
