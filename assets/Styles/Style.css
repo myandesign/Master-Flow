@@ -22,6 +22,22 @@ a {
     text-decoration: none;
 }
 
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 16px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--secondary);        /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);    /* цвет плашки */
+    border-radius: 0px;       /* закругления плашки */
+    border: 3px solid var(--primary);  /* padding вокруг плашки */
+  }
+
 .button-primary {
     display: inline-block;
     background: none;
@@ -46,7 +62,7 @@ a {
     transition: .2s;
 }
 
-.button-primary-active:hover{
+.button-primary-active:hover {
     background: none;
     border: 2px solid var(--primary);
 }
@@ -62,14 +78,21 @@ a {
     color: var(--primary);
     font-size: 14px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
-.bitton-submit {
+.button-submit {
     font-size: 16px;
     font-weight: 600;
     color: #fff;
     padding: 14px 40px;
     border-radius: 4px;
+    border: none;
+    background-color: var(--primary);
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .nav-link {
@@ -90,7 +113,7 @@ h1 {
     margin-bottom: 24px;
 }
 
-.title{
+.title {
     font-size: 48px;
     font-weight: var(--font-weight-semi);
     color: var(--secondary);
@@ -104,8 +127,8 @@ h1 {
     line-height: 32px;
 }
 
-section{
-    padding: 140px 0;
+section {
+    padding: 70px 0;
 }
 
 /* Header style */
@@ -118,7 +141,7 @@ nav {
     margin: 24px 0;
 }
 
-header h1:before{
+header h1:before {
     content: "WELCOME!";
     display: block;
     font-size: 14px;
@@ -131,20 +154,108 @@ header .subtitle {
     margin-bottom: 32px;
 }
 
-header .button-primary-active{
+header .button-primary-active {
     margin-right: 16px;
 }
 
-header iframe{
+header iframe {
     border-radius: 32px;
 }
 
 /* Our Customers */
-.brend-customers{
+.brend-customers {
     margin-top: 64px;
 }
 
 /* Minnimal Offices */
-.minimal-offices{
+.minimal-offices {
     border-top: 2px solid #EBEBEB;
+}
+
+/* Habits */
+.habits .title {
+    max-width: 360px;
+}
+
+.benefits {
+    line-height: 2px;
+}
+
+/* Our latest experiences */
+.our-latest-experiances .title {
+    margin-bottom: 64px;
+}
+
+.cards {
+    cursor: pointer;
+}
+
+.card-info {
+    margin-top: 24px;
+}
+
+.card-name {
+    font-size: 24px;
+    color: var(--secondary);
+    font-weight: var(--font-weight-semi);
+    line-height: 34px;
+}
+
+.tag {
+    color: #CDCDD4;
+    font-size: 14px;
+    font-weight: var(--font-weight-semi);
+}
+
+/* Submit */
+.submit {
+    background: var(--primary);
+    padding: 140px 0;
+}
+
+.submit .title {
+    color: #fff;
+    text-align: center;
+}
+
+.submit .subtitle {
+    color: #D1DEFF;
+    text-align: center;
+}
+
+.submit-input{
+    position: relative;
+    color: var(--secondary);
+    font-size: 16px;
+    font-family: 'Exo', sans-serif;
+    font-weight: var(--font-weight-medium);
+    padding: 20px 0 20px 24px;
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    background-color: #fff;
+}
+
+.submit-input::placeholder{
+    color: #959EAD;
+}
+
+
+/* .submit-input::before{
+    content: url(/assets/Img/Mainl-icon.svg);
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+} */
+
+/* Magic Trick */
+.magic-trick .button-primary-active{
+    margin-right: 16px;
+}
+
+.magic-trick .subtitle{
+    margin-bottom: 32px;
 }
