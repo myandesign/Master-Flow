@@ -12,10 +12,11 @@
     <link rel="shortcut icon" href="assets/Img/FavIcon.svg" type="image/x-svg">
     <link rel="stylesheet" href="assets/Styles/bootstrap.css">
     <link rel="stylesheet" href="assets/Styles/Style.css">
+    <link rel="stylesheet" href="assets/Styles/animate.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light wow fadeIn">
         <div class="container align-items-center">
             <a class="navbar-brand" href="#"><img src="assets/Img/Logo.svg" height="32px" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -60,7 +61,7 @@
     <header>
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <div class="col-xl-5">
+                <div class="col-xl-5 wow fadeInLeft">
                     <h1>The best way for your startup.</h1>
                     <p class="subtitle">You can create your own design process with master.
                         They are blocks designed to carry on with the times with your customers. Modern, minimal blocks
@@ -68,14 +69,14 @@
                     <a href="" class="button-primary-active">Get Started</a>
                     <a href="" class="button-primary">Learn More</a>
                 </div>
-                <img class="col-xl-6" src="assets/Img/Header-ima.png" alt="">
+                <img class="col-xl-6 wow fadeInRight" src="assets/Img/Header-ima.png" alt="">
             </div>
         </div>
     </header>
 
     <section class="our-customer">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
+            <div class="row align-items-center justify-content-between wow fadeIn">
                 <h2 class="title col-xl-6">We have worked with them. Our super customers.</h2>
                 <p class="subtitle col-xl-5">We bring the results while helping you achieve cost and time savings
                     without taking on risk or management overhead.
@@ -95,8 +96,8 @@
     <section class="minimal-offices">
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <img class="col-xl-6" width="20%" src="assets/Img/Minimal-officas-img.png" alt="">
-                <div class="col-xl-5">
+                <img class="col-xl-6 wow fadeInLeft" width="20%" src="assets/Img/Minimal-officas-img.png" alt="">
+                <div class="col-xl-5 wow fadeInRight">
                     <h2 class="title">We work in Minimal Offices</h2>
                     <p class="subtitle">If you’re going to go with a minimalist style in just one area of the home, then
                         choose your home office. A clean and clearly organised workspace is conductive to great
@@ -110,7 +111,7 @@
     <section class="habits">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-xl-4">
+                <div class="col-xl-4 wow fadeInLeft">
                     <h2 class="title">The habits of Our Startup</h2>
                     <p class="subtitle">“Design is not just what it looks like and feels like. Design is how it works”.
                         We always try to make a great output by this culture. Steve Jobs.</p>
@@ -141,14 +142,14 @@
                     </div>
                 </div>
 
-                <img src="assets/Img/Benefit-right.png" class="col-xl-6" alt="">
+                <img src="assets/Img/Benefit-right.png" class="col-xl-6 wow fadeInRight" alt="">
             </div>
         </div>
     </section>
 
     <section class="our-latest-experiances">
         <div class="container">
-            <div class="row">
+            <div class="row wow fadeIn">
                 <h2 class="title">Our latest experiances</h2>
                 <div class="col-xl-4 cards">
                     <img src="assets/Img/Base.png" width="100%" alt="">
@@ -180,7 +181,7 @@
 
     <section class="submit">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center wow fadeIn">
                 <div class="col-xl-12 mb-4">
                     <h2 class="title">Subscribe to the newsletter!</h2>
                     <p class="subtitle">Enter your email into form below to get updates from us</p>
@@ -198,21 +199,21 @@
     <section class="magic-trick">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-xl-4">
+                <div class="col-xl-4 wow fadeInLeft">
                     <h2 class="title">Some magic tricks for your phone</h2>
                     <p class="subtitle">Stream real-time video of your home, and receive notificatoins whenever motion
                         is detected, with Canary’s 1080p HD camera. Perfect device way.</p>
                     <a href="" class="button-primary-active">How it works</a>
                     <a href="" class="button-primary">Our blog</a>
                 </div>
-                <img src="assets/Img/magic-trick.png" width="100%" class="col-xl-6" alt="">
+                <img src="assets/Img/magic-trick.png" width="100%" class="col-xl-6 wow fadeInRight" alt="">
             </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <div class="row justify-content-between">
+            <div class="row justify-content-between wow fadeIn">
                 <div class="col-xl-3">
                     <div class="footer-logo">
                         <img src="assets/Img/Footer-logo.svg" class="" alt="">
@@ -257,6 +258,11 @@
 
     <script src="assets/Scripts/App.js"></script>
     <script src="assets/Scripts/bootstrap.min.js"></script>
+    <script src="assets/Scripts/wow.min.js"></script>
+    <!-- <script src="js/wow.min.js"></script> -->
+    <script>
+    new WOW().init();
+    </script>
 </body>
 
 </html>

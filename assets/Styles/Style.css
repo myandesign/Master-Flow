@@ -22,21 +22,29 @@ a {
     text-decoration: none;
 }
 
-body{
+body {
     font-family: 'Exo', sans-serif;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
-    width: 16px;               /* ширина scrollbar */
-  }
-  body::-webkit-scrollbar-track {
-    background: var(--secondary);        /* цвет дорожки */
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--primary);    /* цвет плашки */
-    border-radius: 4px;       /* закругления плашки */
-    border: 3px solid var(--primary);  /* padding вокруг плашки */
-  }
+    width: 16px;
+    /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--secondary);
+    /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    /* цвет плашки */
+    border-radius: 4px;
+    /* закругления плашки */
+    border: 3px solid var(--primary);
+    /* padding вокруг плашки */
+}
 
 .button-primary {
     display: inline-block;
@@ -224,7 +232,7 @@ header iframe {
     text-align: center;
 }
 
-.submit-input{
+.submit-input {
     position: relative;
     color: var(--secondary);
     font-size: 16px;
@@ -237,7 +245,7 @@ header iframe {
     background-color: #fff;
 }
 
-.submit-input::placeholder{
+.submit-input::placeholder {
     color: #959EAD;
 }
 
@@ -253,26 +261,26 @@ header iframe {
 } */
 
 /* Magic Trick */
-.magic-trick .button-primary-active{
+.magic-trick .button-primary-active {
     margin-right: 16px;
 }
 
-.magic-trick .subtitle{
+.magic-trick .subtitle {
     margin-bottom: 32px;
 }
 
 /* Footer */
 
-.footer{
+.footer {
     padding: 70px 0;
     background: #0A083B;
 }
 
-.footer-logo img{
+.footer-logo img {
     margin-bottom: 32px;
 }
 
-.tel-number{
+.tel-number {
     display: block;
     color: #fff !important;
     font-weight: var(--font-weight-semi);
@@ -280,28 +288,28 @@ header iframe {
     margin-bottom: 16px;
 }
 
-.mailtoo{
+.mailtoo {
     font-size: 16px;
     color: #fff !important;
 }
 
-.footer-menu{
+.footer-menu {
     color: #fff !important;
 }
 
-.footer-title{
+.footer-title {
     font-size: 18px;
     font-weight: var(--font-weight-semi);
     margin-bottom: 32px;
 }
 
-.footer-link{
+.footer-link {
     color: #D1D0DB;
     display: block;
     margin-bottom: 16px;
     transition: .2s;
 }
 
-.footer-link:hover{
+.footer-link:hover {
     color: #fff;
 }
